@@ -1,0 +1,11 @@
+<p>Les chatons disponibles à l'adoption:</p>
+
+<!-- images de mes chatons -->
+
+<ul>
+  <li *ngFor="let chaton of leschaton"><img [src]="chaton.photo" alt="photo du chaton">
+  <button (click)="envoiChaton(chaton)">Adopter</button>
+</li>
+</ul>
+
+

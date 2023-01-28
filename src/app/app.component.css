@@ -1,0 +1,18 @@
+main{
+  min-height: 70vh;
+  position: relative;
+}
+
+aside{
+  height : 70vh;
+  width : 30vh;
+  position: absolute;
+  right : 0;
+  top:0;
+  background-color: blue;
+}
+
+footer{
+  position: sticky;
+  bottom:0;
+}

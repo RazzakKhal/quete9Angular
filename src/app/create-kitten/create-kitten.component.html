@@ -1,0 +1,28 @@
+<form action="" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <input type="text" name="nom" placeholder="nom du chat" formControlName="nom"> <br>
+  <div *ngIf="myForm.controls.nom.errors">
+<p>Le nom du chat est requis</p>
+</div>
+
+
+  <input type="text" name="race" placeholder="race du chat" formControlName="race"> <br>
+  <div *ngIf="myForm.controls.race.errors">
+    <p>La race du chat est requis</p>
+    </div>
+
+
+  <input type="text" name="photo" placeholder="lien photo du chat" formControlName="photo"><br>
+  <div *ngIf="myForm.controls.photo.errors">
+    <p>La photo du chat est requis</p>
+    </div>
+
+
+  <label for="naissance">Date de naissance du chat</label>
+  <input type="date" name="naissance" id="naissance" formControlName="date">
+  <div *ngIf="myForm.controls.date.errors">
+    <p>La date de naissance du chat est requise</p>
+    </div>
+
+
+  <button type="submit">Ajout d'un chaton</button>
+</form>
