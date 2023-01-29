@@ -9,7 +9,7 @@ import { Chaton } from './models/chaton';
 })
 export class AppComponent {
   title = 'quete9Angular';
-  mesChatons : Chaton [] = [];
+  mesChatons : Chaton [] = [{name : 'kiki', race: 'sans oreille', photo:'assets/chat3.jpg', date: new Date()}, {name : 'kikou', race: 'chartreux', photo:'assets/chat2.jpg', date: new Date()}, {name : 'koko', race: 'mencoin', photo:'assets/chat1.jpg', date: new Date()}];
   myForm : FormGroup | undefined;
 userChatonsArray : Chaton [] = [];
 currentChaton : Chaton ={

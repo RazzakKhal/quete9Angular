@@ -3,8 +3,8 @@
 <!-- images de mes chatons -->
 
 <ul>
-  <li *ngFor="let chaton of leschaton"><img [src]="chaton.photo" alt="photo du chaton">
-  <button (click)="envoiChaton(chaton)">Adopter</button>
+  <li *ngFor="let chaton of leschaton"><img [src]="chaton.photo" alt="photo du chaton"><br>
+  <button (click)="envoiChaton(chaton)">Adopter</button><hr>
 </li>
 </ul>
 

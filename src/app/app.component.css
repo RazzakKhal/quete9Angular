@@ -1,16 +1,20 @@
 main{
   min-height: 70vh;
-  position: relative;
+  display:flex;
 }
 
-aside{
-  height : 70vh;
-  width : 30vh;
-  position: absolute;
-  right : 0;
-  top:0;
-  background-color: blue;
+.sections{
+  display:flex;
+  flex-direction: column;
+  width:70vw;
 }
+
+.aside{
+width : 30vw;
+  background-color: rgb(186, 186, 193);
+}
+
+
 
 footer{
   position: sticky;

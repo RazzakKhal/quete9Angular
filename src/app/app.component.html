@@ -1,7 +1,11 @@
 <header><app-header></app-header></header>
 <main>
+  <div class="sections">
   <section><app-create-kitten (envoiFormulaire)="recupChaton($event)"></app-create-kitten></section><br><hr><br>
   <section><app-list-kitten [leschaton]="mesChatons" (userChatonEvent)="adoptedChaton($event)"></app-list-kitten></section>
-<aside><app-user-kitten [mesChatons]="userChatonsArray"></app-user-kitten></aside>
+</div>
+<div class="aside">
+  <aside><app-user-kitten [mesChatons]="userChatonsArray"></app-user-kitten></aside>
+</div>
 </main>
 <footer><app-footer></app-footer></footer>

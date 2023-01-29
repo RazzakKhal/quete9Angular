@@ -1,0 +1,16 @@
+button{
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 1em;
+}
+
+input{
+  padding: 5px;
+
+}
+
+p{
+  font-size: 0.6em;
+  color: red;
+}
