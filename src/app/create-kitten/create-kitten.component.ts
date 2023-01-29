@@ -16,7 +16,7 @@ this.myForm = formBuilder.group({
   nom : ['', Validators.required],
   race : ['', Validators.required],
   photo : ['', Validators.required],
-  date : [new Date(), Validators.required],
+  date : [null, Validators.required],
 });
   }
 

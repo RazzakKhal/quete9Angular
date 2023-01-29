@@ -1,6 +1,7 @@
 img{
   height : 20vh;
   width: 10vw;
+  border-radius: 5px;
 }
 
 button{
@@ -8,4 +9,15 @@ button{
   background-color: #000000;
   color: white;
   font-size: 1em;
+}
+
+.detail{
+border:1px solid black;
+height : 40vh;
+width: 20vw;
+position: fixed;
+top : 10%;
+left : 50%;
+transform: translate(-50%,0%);
+border-radius: 5px;
 }

@@ -3,9 +3,16 @@
 <!-- images de mes chatons -->
 
 <ul>
-  <li *ngFor="let chaton of leschaton"><img [src]="chaton.photo" alt="photo du chaton"><br>
+  <li *ngFor="let chaton of leschaton"><img [src]="chaton.photo" alt="photo du chaton" (mouseover)="afficheDetail(chaton)" (mouseout)="cacheDetail()"><br>
   <button (click)="envoiChaton(chaton)">Adopter</button><hr>
+
 </li>
 </ul>
 
+<div *ngIf="detail" class="detail">
+  <img [src]="afficheChaton?.photo" alt="photo du chaton">
+  <p>{{afficheChaton?.race}}</p>
+  <p>{{afficheChaton?.name}}</p>
+  <p>date de naissance : {{afficheChaton?.date}}</p>
 
+</div>
